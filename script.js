@@ -29,7 +29,6 @@ if (etaNumero < 18) {
   prezzoFinale = prezzoBase * 0.6;
 }
 
-// Formattiamo il prezzo finale con massimo due decimali
-prezzoFinale = prezzoFinale
+
 // Mostriamo il prezzo finale
 console.log("Prezzo finale del biglietto: €", prezzoFinale.toFixed(2));
