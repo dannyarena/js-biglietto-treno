@@ -1,14 +1,14 @@
 
-const chilometri = prompt("Quanti chilometri vuoi percorrere?");
+const chilometri = Number(prompt("Quanti chilometri vuoi percorrere?"));
 
 
-const eta = prompt("Quanti anni hai?");
+const eta = Number(prompt("Quanti anni hai?"));
 
 
 console.log("Chilometri inseriti:", chilometri);
 console.log("Età inserita:", eta);
 
-
+// si converte il testo in valore calcolabile
 const km = Number(chilometri);
 const etaNumero = Number(eta);
 
@@ -30,7 +30,6 @@ if (etaNumero < 18) {
 }
 
 // Formattiamo il prezzo finale con massimo due decimali
-prezzoFinale = prezzoFinale.toFixed(2);
-
+prezzoFinale = prezzoFinale
 // Mostriamo il prezzo finale
-console.log("Prezzo finale del biglietto: €", prezzoFinale);
+console.log("Prezzo finale del biglietto: €", prezzoFinale.toFixed(2));
